@@ -94,6 +94,37 @@ public class AnimalInterfaceTest {
     }
 
     @Test
+    void flyDolphineTest() {
+        AnimalInterface dolphine = new Dolphine();
+        try {
+            dolphine.fly();
+        }catch (UnsupportedOperationException e){
+            assertEquals("Dolphine cannot fly",e.getMessage());
+        }
+    }
+
+    @Test
+    void walkDolphineTest() {
+        AnimalInterface dolphine = new Dolphine();
+        try {
+            dolphine.walk();
+        }catch (UnsupportedOperationException e){
+            assertEquals("Dolphine cannot walk",e.getMessage());
+        }
+    }
+
+
+    @Test
+    void singDolphineTest() {
+        AnimalInterface dolphine = new Dolphine();
+        try {
+            dolphine.sing();
+        }catch (UnsupportedOperationException e){
+            assertEquals("Dolphine cannot sing",e.getMessage());
+        }
+    }
+
+    @Test
     void duckTest() {
         BirdInterface duck = new Duck();
         duck.sing();
