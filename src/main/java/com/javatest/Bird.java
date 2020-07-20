@@ -1,4 +1,4 @@
 package com.javatest;
 
-public class Bird implements BirdInterface{
+public class Bird implements BirdInterface {
 }

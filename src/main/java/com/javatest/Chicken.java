@@ -4,16 +4,16 @@ public class Chicken implements BirdInterface {
 
     private ChickenType chickenType;
 
-    public Chicken(){
+    public Chicken() {
         this.chickenType = ChickenType.HEN;
     }
 
-    public Chicken(ChickenType type){
+    public Chicken(ChickenType type) {
         this.chickenType = type;
     }
 
     public void sing() {
-        switch (this.chickenType){
+        switch (this.chickenType) {
             case HEN:
                 System.out.println("Cluck, cluck");
                 break;

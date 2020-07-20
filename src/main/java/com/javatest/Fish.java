@@ -1,4 +1,4 @@
 package com.javatest;
 
-public class Fish implements FishInterface{
+public class Fish implements FishInterface {
 }

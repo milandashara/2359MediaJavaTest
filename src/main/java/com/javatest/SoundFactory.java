@@ -1,9 +1,9 @@
 package com.javatest;
 
 public class SoundFactory {
-    public static AnimalInterface create(SoundsLike soundsLike){
+    public static AnimalInterface create(SoundsLike soundsLike) {
         AnimalInterface animalInterface;
-        switch (soundsLike){
+        switch (soundsLike) {
             case CAT:
                 animalInterface = new Cat();
                 break;
@@ -14,7 +14,7 @@ public class SoundFactory {
                 animalInterface = new Chicken(ChickenType.ROOSTER);
                 break;
             default:
-                throw new IllegalArgumentException("Implementation not found for "+ soundsLike);
+                throw new IllegalArgumentException("Implementation not found for " + soundsLike);
         }
         return animalInterface;
     }

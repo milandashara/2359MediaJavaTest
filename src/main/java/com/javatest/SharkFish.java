@@ -3,7 +3,7 @@ package com.javatest;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SharkFish implements FishInterface{
+public class SharkFish implements FishInterface {
 
     private List<FishSpeciality> fishSpecialities;
 

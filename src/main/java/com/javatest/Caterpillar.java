@@ -1,4 +1,4 @@
 package com.javatest;
 
-public class Caterpillar implements CaterpillarInterface{
+public class Caterpillar implements CaterpillarInterface {
 }

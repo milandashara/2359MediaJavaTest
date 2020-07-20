@@ -58,8 +58,8 @@ public class AnimalInterfaceTest {
         BirdInterface bird = new Bird();
         try {
             bird.swim();
-        }catch (UnsupportedOperationException e){
-            assertEquals("Bird cannot swim",e.getMessage());
+        } catch (UnsupportedOperationException e) {
+            assertEquals("Bird cannot swim", e.getMessage());
         }
     }
 
@@ -68,8 +68,8 @@ public class AnimalInterfaceTest {
         FishInterface fish = new Fish();
         try {
             fish.walk();
-        }catch (UnsupportedOperationException e){
-            assertEquals("Fish cannot walk",e.getMessage());
+        } catch (UnsupportedOperationException e) {
+            assertEquals("Fish cannot walk", e.getMessage());
         }
     }
 
@@ -78,8 +78,8 @@ public class AnimalInterfaceTest {
         FishInterface fish = new Fish();
         try {
             fish.sing();
-        }catch (UnsupportedOperationException e){
-            assertEquals("Fish cannot sing",e.getMessage());
+        } catch (UnsupportedOperationException e) {
+            assertEquals("Fish cannot sing", e.getMessage());
         }
     }
 
@@ -88,8 +88,8 @@ public class AnimalInterfaceTest {
         FishInterface fish = new Fish();
         try {
             fish.fly();
-        }catch (UnsupportedOperationException e){
-            assertEquals("Fish cannot fly",e.getMessage());
+        } catch (UnsupportedOperationException e) {
+            assertEquals("Fish cannot fly", e.getMessage());
         }
     }
 
@@ -98,8 +98,8 @@ public class AnimalInterfaceTest {
         AnimalInterface dolphine = new Dolphine();
         try {
             dolphine.fly();
-        }catch (UnsupportedOperationException e){
-            assertEquals("Dolphine cannot fly",e.getMessage());
+        } catch (UnsupportedOperationException e) {
+            assertEquals("Dolphine cannot fly", e.getMessage());
         }
     }
 
@@ -108,8 +108,8 @@ public class AnimalInterfaceTest {
         AnimalInterface dolphine = new Dolphine();
         try {
             dolphine.walk();
-        }catch (UnsupportedOperationException e){
-            assertEquals("Dolphine cannot walk",e.getMessage());
+        } catch (UnsupportedOperationException e) {
+            assertEquals("Dolphine cannot walk", e.getMessage());
         }
     }
 
@@ -119,8 +119,8 @@ public class AnimalInterfaceTest {
         AnimalInterface dolphine = new Dolphine();
         try {
             dolphine.sing();
-        }catch (UnsupportedOperationException e){
-            assertEquals("Dolphine cannot sing",e.getMessage());
+        } catch (UnsupportedOperationException e) {
+            assertEquals("Dolphine cannot sing", e.getMessage());
         }
     }
 
@@ -129,8 +129,8 @@ public class AnimalInterfaceTest {
         ButterflyInterface butterFly = new ButterFly();
         try {
             butterFly.sing();
-        }catch (UnsupportedOperationException e){
-            assertEquals("ButterFly cannot sing",e.getMessage());
+        } catch (UnsupportedOperationException e) {
+            assertEquals("ButterFly cannot sing", e.getMessage());
         }
     }
 
@@ -140,8 +140,8 @@ public class AnimalInterfaceTest {
         ButterflyInterface butterFly = new ButterFly();
         try {
             butterFly.walk();
-        }catch (UnsupportedOperationException e){
-            assertEquals("ButterFly cannot walk",e.getMessage());
+        } catch (UnsupportedOperationException e) {
+            assertEquals("ButterFly cannot walk", e.getMessage());
         }
     }
 
@@ -150,8 +150,8 @@ public class AnimalInterfaceTest {
         ButterflyInterface butterFly = new ButterFly();
         try {
             butterFly.swim();
-        }catch (UnsupportedOperationException e){
-            assertEquals("ButterFly cannot swim",e.getMessage());
+        } catch (UnsupportedOperationException e) {
+            assertEquals("ButterFly cannot swim", e.getMessage());
         }
     }
 
@@ -160,8 +160,8 @@ public class AnimalInterfaceTest {
         CaterpillarInterface caterpillar = new Caterpillar();
         try {
             caterpillar.swim();
-        }catch (UnsupportedOperationException e){
-            assertEquals("Caterpillar cannot swim",e.getMessage());
+        } catch (UnsupportedOperationException e) {
+            assertEquals("Caterpillar cannot swim", e.getMessage());
         }
     }
 
@@ -170,8 +170,8 @@ public class AnimalInterfaceTest {
         CaterpillarInterface caterpillar = new Caterpillar();
         try {
             caterpillar.sing();
-        }catch (UnsupportedOperationException e){
-            assertEquals("Caterpillar cannot sing",e.getMessage());
+        } catch (UnsupportedOperationException e) {
+            assertEquals("Caterpillar cannot sing", e.getMessage());
         }
     }
 
@@ -180,8 +180,8 @@ public class AnimalInterfaceTest {
         CaterpillarInterface caterpillar = new Caterpillar();
         try {
             caterpillar.fly();
-        }catch (UnsupportedOperationException e){
-            assertEquals("Caterpillar cannot fly",e.getMessage());
+        } catch (UnsupportedOperationException e) {
+            assertEquals("Caterpillar cannot fly", e.getMessage());
         }
     }
 

@@ -1,16 +1,16 @@
 package com.javatest;
 
-public interface ButterflyInterface extends AnimalInterface{
+public interface ButterflyInterface extends AnimalInterface {
 
-    default void swim(){
+    default void swim() {
         throw new UnsupportedOperationException("ButterFly cannot swim");
     }
 
-    default void walk(){
+    default void walk() {
         throw new UnsupportedOperationException("ButterFly cannot walk");
     }
 
-    default void sing(){
+    default void sing() {
         throw new UnsupportedOperationException("ButterFly cannot sing");
     }
 }
