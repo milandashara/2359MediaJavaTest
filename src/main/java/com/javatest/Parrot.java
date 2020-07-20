@@ -8,16 +8,7 @@ public class Parrot implements BirdInterface{
 
     public Parrot(SoundsLike soundsLike) {
         this.soundsLike = soundsLike;
-        switch (soundsLike){
-            case CAT:
-                animalInterface = new Cat();
-                break;
-            case DOG:
-                animalInterface = new Dog();
-                break;
-            case ROOSTER:
-                animalInterface = new Chicken(ChickenType.ROOSTER);
-        }
+        animalInterface = SoundFactory.create(soundsLike);
     }
 
     public void sing(){
