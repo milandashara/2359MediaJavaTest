@@ -5,6 +5,7 @@ import org.junit.jupiter.api.*;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class AnimalInterfaceTest {
@@ -50,6 +51,46 @@ public class AnimalInterfaceTest {
         BirdInterface bird = new Bird();
         bird.walk();
         assertTrue(outContent.toString().contains("I am walking\n"));
+    }
+
+    @Test
+    void swimBirdTest() {
+        BirdInterface bird = new Bird();
+        try {
+            bird.swim();
+        }catch (UnsupportedOperationException e){
+            assertEquals("Bird cannot swim",e.getMessage());
+        }
+    }
+
+    @Test
+    void walkFishTest() {
+        FishInterface fish = new Fish();
+        try {
+            fish.walk();
+        }catch (UnsupportedOperationException e){
+            assertEquals("Fish cannot walk",e.getMessage());
+        }
+    }
+
+    @Test
+    void singFishTest() {
+        FishInterface fish = new Fish();
+        try {
+            fish.sing();
+        }catch (UnsupportedOperationException e){
+            assertEquals("Fish cannot sing",e.getMessage());
+        }
+    }
+
+    @Test
+    void flyFishTest() {
+        FishInterface fish = new Fish();
+        try {
+            fish.fly();
+        }catch (UnsupportedOperationException e){
+            assertEquals("Fish cannot fly",e.getMessage());
+        }
     }
 
     @Test

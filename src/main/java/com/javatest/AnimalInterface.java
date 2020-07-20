@@ -12,4 +12,8 @@ interface AnimalInterface {
     default void fly() {
         System.out.println("I am flying");
     }
+
+    default void swim() {
+        System.out.println("I am swimming");
+    }
 }
