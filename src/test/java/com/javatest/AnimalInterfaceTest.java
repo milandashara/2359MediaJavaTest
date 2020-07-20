@@ -70,7 +70,24 @@ public class AnimalInterfaceTest {
     void roosterTest() {
         BirdInterface bird = new Chicken(ChickenType.ROOSTER);
         bird.sing();
-        assertTrue(outContent.toString().contains("Cluck, cluck\n"));
+        assertTrue(outContent.toString().contains("Cock-a-doodle-doo\n"));
+    }
+
+
+    @Test
+    void parrotTest() {
+        BirdInterface bird = new Parrot(SoundsLike.DOG);
+        bird.sing();
+        assertTrue(outContent.toString().contains("Woof, woof\n"));
+
+        bird = new Parrot(SoundsLike.CAT);
+        bird.sing();
+        assertTrue(outContent.toString().contains("Meow\n"));
+
+        bird = new Parrot(SoundsLike.ROOSTER);
+        bird.sing();
+        assertTrue(outContent.toString().contains("Cock-a-doodle-doo\n"));
+
     }
 
     @AfterEach
