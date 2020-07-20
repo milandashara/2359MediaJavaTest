@@ -66,6 +66,13 @@ public class AnimalInterfaceTest {
         assertTrue(outContent.toString().contains("Cluck, cluck\n"));
     }
 
+    @Test
+    void roosterTest() {
+        BirdInterface bird = new Chicken(ChickenType.ROOSTER);
+        bird.sing();
+        assertTrue(outContent.toString().contains("Cluck, cluck\n"));
+    }
+
     @AfterEach
     void tearDown() {
         System.setOut(originalOut);
