@@ -125,6 +125,67 @@ public class AnimalInterfaceTest {
     }
 
     @Test
+    void singButterflyTest() {
+        ButterflyInterface butterFly = new ButterFly();
+        try {
+            butterFly.sing();
+        }catch (UnsupportedOperationException e){
+            assertEquals("ButterFly cannot sing",e.getMessage());
+        }
+    }
+
+
+    @Test
+    void walkButterflyTest() {
+        ButterflyInterface butterFly = new ButterFly();
+        try {
+            butterFly.walk();
+        }catch (UnsupportedOperationException e){
+            assertEquals("ButterFly cannot walk",e.getMessage());
+        }
+    }
+
+    @Test
+    void swimButterflyTest() {
+        ButterflyInterface butterFly = new ButterFly();
+        try {
+            butterFly.swim();
+        }catch (UnsupportedOperationException e){
+            assertEquals("ButterFly cannot swim",e.getMessage());
+        }
+    }
+
+    @Test
+    void swimCaterpillarTest() {
+        CaterpillarInterface caterpillar = new Caterpillar();
+        try {
+            caterpillar.swim();
+        }catch (UnsupportedOperationException e){
+            assertEquals("Caterpillar cannot swim",e.getMessage());
+        }
+    }
+
+    @Test
+    void singCaterpillarTest() {
+        CaterpillarInterface caterpillar = new Caterpillar();
+        try {
+            caterpillar.sing();
+        }catch (UnsupportedOperationException e){
+            assertEquals("Caterpillar cannot sing",e.getMessage());
+        }
+    }
+
+    @Test
+    void flyCaterpillarTest() {
+        CaterpillarInterface caterpillar = new Caterpillar();
+        try {
+            caterpillar.fly();
+        }catch (UnsupportedOperationException e){
+            assertEquals("Caterpillar cannot fly",e.getMessage());
+        }
+    }
+
+    @Test
     void duckTest() {
         BirdInterface duck = new Duck();
         duck.sing();
