@@ -1,6 +1,6 @@
 package com.javatest;
 
-interface Animal {
+interface AnimalInterface {
     default void walk() {
         System.out.println("I am walking");
     }

@@ -7,7 +7,7 @@ import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class AnimalTest {
+public class AnimalInterfaceTest {
 
     private static final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private static final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
@@ -32,7 +32,7 @@ public class AnimalTest {
 
     @Test
     void singingTest() {
-        Bird bird = new Bird();
+        BirdInterface bird = new Bird();
         bird.sing();
         assertTrue(outContent.toString().contains("I am singing\n"));
     }
@@ -40,16 +40,30 @@ public class AnimalTest {
     @Test
     void flyingTest() {
         System.out.print('\f');
-        Bird bird = new Bird();
+        BirdInterface bird = new Bird();
         bird.fly();
         assertTrue(outContent.toString().contains("I am flying\n"));
     }
 
     @Test
     void walkingTest() {
-        Bird bird = new Bird();
+        BirdInterface bird = new Bird();
         bird.walk();
         assertTrue(outContent.toString().contains("I am walking\n"));
+    }
+
+    @Test
+    void duckTest() {
+        BirdInterface duck = new Duck();
+        duck.sing();
+        assertTrue(outContent.toString().contains("Quack, quack\n"));
+    }
+
+    @Test
+    void chickenTest() {
+        BirdInterface bird = new Chicken();
+        bird.sing();
+        assertTrue(outContent.toString().contains("Cluck, cluck\n"));
     }
 
     @AfterEach
